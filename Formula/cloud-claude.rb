@@ -1,20 +1,20 @@
 class CloudClaude < Formula
   desc "Transparent remote Claude Code CLI — one command to connect your cloud host"
   homepage "https://github.com/ZaneL1u/cloud-cli-proxy"
-  version "4.0.1"
+  version "4.0.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ZaneL1u/cloud-cli-proxy/releases/download/v4.0.1/cloud-claude-darwin-arm64.tar.gz"
-      sha256 "237590f124825e6e3b9d36d967bb5fbe21334fc561d8f5c0f7f1f2a5898f668b"
+      url "https://github.com/ZaneL1u/cloud-cli-proxy/releases/download/v4.0.2/cloud-claude-darwin-arm64.tar.gz"
+      sha256 "d9c10e0b549fabfef4045e02a5807150ec1236903df543a7373b8a3bd590bf2d"
 
       def install
         bin.install "cloud-claude-darwin-arm64" => "cloud-claude"
       end
     else
-      url "https://github.com/ZaneL1u/cloud-cli-proxy/releases/download/v4.0.1/cloud-claude-darwin-amd64.tar.gz"
-      sha256 "03c13b5f74a1a8a2f2488e5edd3efccbd8bf9dda4e2ddde0fe0df477de82a074"
+      url "https://github.com/ZaneL1u/cloud-cli-proxy/releases/download/v4.0.2/cloud-claude-darwin-amd64.tar.gz"
+      sha256 "640138223e243993d1918676d2aed584092978dd39d23d79cd491ab96744b166"
 
       def install
         bin.install "cloud-claude-darwin-amd64" => "cloud-claude"
@@ -24,16 +24,16 @@ class CloudClaude < Formula
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/ZaneL1u/cloud-cli-proxy/releases/download/v4.0.1/cloud-claude-linux-arm64.tar.gz"
-      sha256 "0e27c54e31b140c4345b9f59e2b8b024f9d34084609a11f6a1c8b66af3fa9ea8"
+      url "https://github.com/ZaneL1u/cloud-cli-proxy/releases/download/v4.0.2/cloud-claude-linux-arm64.tar.gz"
+      sha256 "034c27619ff2e0dec6dec1bd8c212423dc00cb3d7fe7de33e8fac72818e52000"
 
       def install
         bin.install "cloud-claude-linux-arm64" => "cloud-claude"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ZaneL1u/cloud-cli-proxy/releases/download/v4.0.1/cloud-claude-linux-amd64.tar.gz"
-      sha256 "43421b41c00693b1e9e259aa6606255f51c5d2a2cf3243e5853d9b9e9fd8b6a4"
+      url "https://github.com/ZaneL1u/cloud-cli-proxy/releases/download/v4.0.2/cloud-claude-linux-amd64.tar.gz"
+      sha256 "4fcadfe7ada0d0573a7399bc7b70ab1d6abea405d6418af0f13b09ecca3f49fb"
 
       def install
         bin.install "cloud-claude-linux-amd64" => "cloud-claude"
