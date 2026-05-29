@@ -7,14 +7,14 @@ class CloudClaude < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/ZaneL1u/cloud-cli-proxy/releases/download/v4.0.3/cloud-claude-darwin-arm64.tar.gz"
-      sha256 "cd159b07c5a2699353b463932294e31a55a976a56957cfcbe8ea6aeb0efdeb45"
+      sha256 "df8f7ac0b34f06684adbc77889d12ccff90baa08d824347f67e05172c91b141c"
 
       def install
         bin.install "cloud-claude-darwin-arm64" => "cloud-claude"
       end
     else
       url "https://github.com/ZaneL1u/cloud-cli-proxy/releases/download/v4.0.3/cloud-claude-darwin-amd64.tar.gz"
-      sha256 "09053920e1a91d6088981f05146b83209c2ca95c55b25341a766a9311a51bdaa"
+      sha256 "901930d616ad3404c82159ecf261489a9892d3b76f87dc47b50368d71506b6d8"
 
       def install
         bin.install "cloud-claude-darwin-amd64" => "cloud-claude"
@@ -25,7 +25,7 @@ class CloudClaude < Formula
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/ZaneL1u/cloud-cli-proxy/releases/download/v4.0.3/cloud-claude-linux-arm64.tar.gz"
-      sha256 "3bf5675dd3c14e4b5b7186e8f4324b076a10e68b9b41177df584a3377f30d1a7"
+      sha256 "20453f8526c1d0093d78b6e187be660960683fb784fdcea9b27c13899df02858"
 
       def install
         bin.install "cloud-claude-linux-arm64" => "cloud-claude"
@@ -33,7 +33,7 @@ class CloudClaude < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/ZaneL1u/cloud-cli-proxy/releases/download/v4.0.3/cloud-claude-linux-amd64.tar.gz"
-      sha256 "68ddc48d4614f0a832aeba335d516480e5a1b42be7e8aa073b24b83cbacf22af"
+      sha256 "6b5ae26742b2764a73c1fbc8939a55033beb90865b3f9e0dc42bd48a50f8f565"
 
       def install
         bin.install "cloud-claude-linux-amd64" => "cloud-claude"
